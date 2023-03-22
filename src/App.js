@@ -25,6 +25,7 @@ function App() {
 
   return (
     <Card
+    align="center"
       sx={{
         boxShadow: 3,
         m: "5px",
