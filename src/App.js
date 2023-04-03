@@ -11,7 +11,7 @@ function App() {
   const API =
     "https://api.nasa.gov/planetary/apod?api_key=mZOd04B04VfddJyxgt29puJAvUmuV9Yr9w0tuLbD";
   const [data, setData] = useState([]);
-  const fetchPokemon = async () => {
+  const fetchdata = async () => {
     const response = await fetch(`${API}`);
     const data = await response.json();
     setData(data);
@@ -20,7 +20,7 @@ function App() {
   };
 
   useEffect(() => {
-    fetchPokemon();
+    fetchdata();
   }, []);
 
   return (
